@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <title>UYB.FC</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"
+      id="navbar"
+    >
+      <div class="container d-flex">
+        <a href="/index.html" class="navbar-brand"
+          ><img src="/img/logo.png" alt="" id="nav__logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a href="/players.html" class="nav-link">PLAYERS</a>
+            </li>
+            <li class="nav-item me-3">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a href="/form.html" class="nav-link">JOIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="bg-primary p-0 m-0" style="min-height: 120vh;">
+      <section class="full-hero bg-primary">
+      <div class="container-fluid py-0">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img
+                src="/img/together.jpg"
+                class="d-block w-100 c-image"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>You'll will never walk alone</h5>
+                <p>Even in the middle of icy winter</p>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="/img/blue.jpg"
+                class="d-block w-100 c-image"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Just like the sea waves...</h5>
+                <p>The boys are gliding</p>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="/img/green.jpg"
+                class="d-block w-100 c-image"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>No red cards!!!</h5>
+                <p>Only green boys</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Photo Gallery</h2>
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/ayo.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/kris.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/paul.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/1000063372.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/dave.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/night.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/mafrex.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/wilson.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/clement.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/uche.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/raymond.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="/photogallery/snow.jpg" class="gallery-img" alt="Gallery Image 1" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+  <p class="mb-0">&copy; 2025 UYB.FC. All rights reserved.</p>
+</footer>
+
+    </main>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

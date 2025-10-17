@@ -1,0 +1,269 @@
+body::before{
+  display: block;
+  content: '';
+  height: 122px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*-------NAVBAR-------*/
+
+#nav__logo{
+  width: 70px;
+  height: 80px;
+  margin-top: 10px;
+  
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+
+#homepage__image{
+  height: 300px;
+  width: 200px;
+}
+
+#homepage__image {
+  animation: fadeIn 1.5s ease-in;
+}
+
+
+#playersection__image{
+  max-width: 100%;
+  height: auto;
+  object-fit: contain ;
+}
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media(min-width: 768px){
+  #signup__input{
+    width: 50%;
+ }
+
+  .navbar-toggler{
+    text-align: right;
+    margin-left: 30rem;
+  }
+
+}
+
+#playersection__container{
+  display: flex;
+}
+
+
+
+
+/*This is the styling for the player page*/
+.card {
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover{
+  transform: scale(1.03);
+  color:#0d6efd;
+  cursor: pointer;
+  #player-attribute-button{
+    opacity: 1;
+    transition: all 0.5s;
+  }
+}
+
+/*Styling for the gallery page */
+.c-item{
+ height: 480px;
+}
+
+.c-image{
+ height: 100%;
+ object-fit: cover;
+ filter: brightness(0.6);
+}
+
+/*player attribute toggle*/
+.card .overlay {
+  z-index: 10;
+  border-radius: 0.5rem;
+}
+
+
+.overlay {
+  transition: all 0.3s;
+}
+
+.overlay.d-none {
+  display: none !important;
+}
+.overlay:hover{
+  transform: scale(1.005);
+  color:#0d6efd;
+  cursor: pointer;
+}
+
+#player-attribute-list{
+  list-style-type: none;
+  font-size: 1.03rem;
+}
+
+#player-attribute-button{
+  opacity: 0;
+  width: auto;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 6px 12px;
+}
+
+#player-attribute-button:hover{
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  #player-attribute-button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Form page 
+#form-container{
+  align-self: center;
+}
+
+#nationality-position{
+  display: flex;
+  gap: 7rem;
+}
+
+#nameInput{
+  width: 500px;
+}
+
+#select{
+  width: 500px;
+}
+
+#submit{
+  margin-top: 40px;
+  margin-bottom: 500px;
+  width: 200px;
+  margin-right: 10%;
+}
+
+#form-container{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+#picture-column{
+  
+}
+
+
+#summer{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 40%;
+}
+
+*/
+
+.card {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.overlay {
+  position: absolute;
+  inset: 0; /* fills the card */
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* top-align for scroll */
+  text-align: center;
+  padding: 1rem;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.overlay img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1;
+}
+
+.overlay button {
+  margin-top: auto; /* <--- pushes button to the bottom */
+  bottom: 1rem;
+  background-color: #0d6efd; /* bootstrap primary color */
+  border: none;
+}
+
+.rules-topic {
+  color: #0d6efd;
+  font-weight: 600;
+  margin-top: 1rem;   
+  margin-bottom: 0; 
+}
+
+.modal-body p {
+  margin-top: 0;  
+  margin-bottom: 0.75rem;
+  line-height: 1.5; 
+}
+
+.modal-title{
+ color: #0d6efd; 
+}
+
+
+.modal-backdrop.show {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.gallery-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .gallery-img:hover {
+        transform: scale(1.05);
+      }

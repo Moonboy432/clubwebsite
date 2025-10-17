@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <title>UYB.FC</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"
+      id="navbar"
+    >
+      <div class="container d-flex">
+        <a href="/index.html" class="navbar-brand"
+          ><img src="/img/logo.png" alt="" id="nav__logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto" id="navlist">
+            <li class="nav-item me-3">
+              <a href="/players.html" class="nav-link">PLAYERS</a>
+            </li>
+            <li class="nav-item me-3">
+              <a href="gallery.html" class="nav-link">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a href="/form.html" class="nav-link">JOIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="bg-primary text-light py-5">
+      <div class="container" id="form-container">
+        <div class="text-center mb-4">
+          <img
+            src="/img/logo.png"
+            alt="UYB.FC logo"
+            width="72"
+            height="72"
+            class="mb-3 d-block mx-auto"
+          />
+          <h3 class="fw-bold">ENTRY FORM</h3>
+          <p class="text-light">Kindly fill this form to signup</p>
+        </div>
+      </div>
+      <div class="container">
+        <h4 class="mb-3"></h4>
+        <form id="entryform" class="bg-light text-dark p-4 p-md-5 rounded shadow-sm">
+          <div class="row g-3">
+            <!--first name-->
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">First Name</label>
+              <input
+                name="first_name"
+                type="text"
+                class="form-control"
+                id="first_name"
+                placeholder="Larry"
+                required
+              />
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+            <!--last name-->
+            <div class="col-md-6">
+              <label  class="form-label fw-semibold">Last Name</label>
+              <input
+                name="last_name"
+                type="text"
+                class="form-control"
+                id="last_name"
+                placeholder="Johnson"
+              />
+              <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+          </div>
+
+          <!--email-->
+          <div class="col-12 mt-3">
+            <label class="form-label fw-semibold"> Enter your Email Address</label>
+            <input
+            name="email" 
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="you@example.com"
+            required>
+            <div class="invalid-feedback">Please enter a valid email address</div>
+          </div>
+
+          <!--Nationality and position-->
+          <div class="row g-3 mt-2" id="nationality-position">
+            <div class="col-md-6">
+              <label  class="form-label fw-semibold"> Nationality </label>
+              <select name="nationality" id="nationality" class="form-select" required>
+                <option value="">Choose...</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Congo">Congo</option>
+                <option value="Cameroun">Cameroun</option>
+              </select>
+              <div class="invalid-feedback">Please select your nationality</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-semibold"> Play Position </label>
+              <select name="player_wing" id="player_wing" class="form-select" required>
+                <option value="">Choose</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+                <option value="Defender">Defender</option>
+                <option value="Midfield">MidField</option>
+                <option value="Striker">Striker</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select your position
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+           <button type="submit" class="btn btn-primary px-4 py-2">
+            Submit
+           </button>
+          </div>
+          <div id="success-message" class="alert alert-sucess mt-3 d-none text-center">
+            ✅ Your entry has been submitted successfully!
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/script.js">
+
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
